@@ -1,0 +1,373 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.auth-page {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.auth-page .form-container {
+    background-color: #fff;
+    color: #333;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+.auth-page h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #2575fc;
+}
+
+.auth-page input[type="text"],
+.auth-page input[type="email"],
+.auth-page input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.auth-page input[type="text"]:focus,
+.auth-page input[type="email"]:focus,
+.auth-page input[type="password"]:focus {
+    border-color: #2575fc;
+    outline: none;
+}
+
+.auth-page button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #2575fc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.auth-page button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.auth-page p.error {
+    color: red;
+    font-size: 14px;
+}
+
+.auth-page p.success {
+    color: green;
+}
+
+.auth-page label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.auth-page .form-group {
+    margin-bottom: 15px;
+}
+
+
+.dashboard-page {
+    background-color: #fdfcfb;
+    color: #333;
+    display: flex;
+    height: 100vh;
+}
+
+.dashboard-page .sidebar {
+    background-color: #6a5acd;
+    color: white;
+    width: 250px;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100vh; /* Фиксируем высоту на всю высоту окна */
+    position: fixed; /* Закрепляем меню */
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+
+}
+
+.dashboard-page .sidebar h2 {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.dashboard-page .sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dashboard-page .sidebar ul li {
+    margin: 15px 0;
+}
+
+.dashboard-page .sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+}
+
+.dashboard-page .sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+.dashboard-page .navbar {
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 250px);
+    position: fixed;
+    left: 250px;
+    top: 0;
+    box-sizing: border-box;
+}
+
+.dashboard-page .content {
+    margin-top: 80px;
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.dashboard-page .content h1 {
+    color: #6a5acd;
+}
+
+.dashboard-page .content .stats {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #555;
+}
+.form-container {
+    background-color: #fff;
+    color: #333;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.form-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #6c5ce7;
+}
+
+.form-container input,
+.form-container select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #6c5ce7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.form-container button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+body.dashboard-page {
+    font-family: Arial, sans-serif;
+    background-color: #fdfcfb;
+    color: #333;
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: #6a5acd;
+    color: white;
+    width: 250px;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button.submit-btn {
+    background-color: #2575fc;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button.submit-btn:hover {
+    background-color: #1e63d4;
+}
+.project-page form {
+    max-height: 500px; /* Уменьшает высоту формы */
+    width: 700px; /* Уменьшает ширину формы */
+    display: flex;
+    flex-direction: column; /* Выравнивание элементов формы вертикально */
+    gap: 15px; /* Отступы между элементами формы */
+    margin: 0;
+    margin-left: 100px; /* Увеличиваем отступ немного, чтобы контент не прижимался слишком плотно */
+    padding: 10px;
+}
+/* Основной контейнер */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Уменьшена минимальная ширина карточек */
+    gap: 15px; /* Уменьшены отступы между карточками */
+    margin-top: 15px;
+}
+
+/* Карточка проекта */
+.project-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 6px; /* Уменьшен радиус */
+    padding: 15px; /* Уменьшен внутренний отступ */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    font-size: 12px; /* Уменьшен общий размер шрифта */
+}
+
+.project-card:hover {
+    transform: translateY(-3px); /* Уменьшена высота подъема при наведении */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Заголовки */
+.page-title {
+    text-align: center;
+    font-size: 30px; /* Уменьшен размер заголовка страницы */
+    margin-bottom: 15px;
+}
+
+.project-title {
+    font-size: 16px; /* Уменьшен размер заголовка проекта */
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.task-heading {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Описание и детали */
+.project-description, .project-dates, .task-description, .task-priority, .task-users {
+    font-size: 12px; /* Уменьшен размер текста */
+    margin: 3px 0; /* Уменьшены отступы между элементами */
+    line-height: 1.3; /* Уменьшена высота строки */
+}
+
+/* Список задач */
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 8px; /* Уменьшен отступ сверху */
+}
+
+.task-item {
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 8px; /* Уменьшен внутренний отступ */
+    margin-bottom: 8px; /* Уменьшен отступ между задачами */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.task-title {
+    font-size: 14px; /* Уменьшен размер заголовка задачи */
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.no-projects, .no-tasks {
+    font-style: italic;
+    color: #666;
+    font-size: 12px; /* Уменьшен размер шрифта для текста "Нет проектов/задач" */
+}
+/* Компактная кнопка удаления */
+.compact-cross {
+    background-color: transparent;
+    color: #dc3545; /* Красный */
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 0;
+    display: inline-block;
+    line-height: 1;
+}
+
+.compact-cross:hover {
+    color: #c82333; /* Тёмно-красный */
+    opacity: 0.8;
+    text-decoration: none;
+}
